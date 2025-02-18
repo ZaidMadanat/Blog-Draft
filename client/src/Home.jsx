@@ -13,7 +13,6 @@ function Home() {
 
   return (
     <div className="container mt-4">
-      <h1 className="mb-4">The Days</h1>
       <ul className="list-group">
         {posts.map(post => (
           <li key={post.slug} className="list-group-item">
