@@ -6,7 +6,7 @@ function Post() {
   const [post, setPost] = useState(null);
 
   useEffect(() => {
-    fetch(`http://localhost:5000/api/posts/${slug}`)
+    fetch(`https://blog-draft-4y1r.onrender.com/api/posts/${slug}`)
       .then(res => res.json())
       .then(data => setPost(data))
       .catch(err => console.error("Error fetching post:", err));
